@@ -1,0 +1,52 @@
+ion-toolbar {
+    --background: url(/../assets/images/navbarbg.png) 0 0/100% 100% no-repeat;
+  }
+  
+  .boutonbard{
+    float: right;
+  }
+  
+  #main-grid{
+      height:100%;
+    }
+  
+    .big-row {
+      height:50%;
+    }
+  
+    #toolbar{
+      top: 0;
+    }
+  
+    #container{
+      position: relative;
+      text-align: center;
+      left : 30px;
+      top : 35px;
+    }
+  
+  
+ 
+  
+  ion-content {
+    --background: url(/../assets/images/background.png) 0 0/100% 100% no-repeat;
+  }
+  
+  
+  .textbutton2{
+    position : relative;
+    left:17px;
+  }
+  .button2{
+    width : 100%;
+    opacity : 0.66;
+    height : 100px;
+    margin:0;
+  }
+  
+  img{
+    position : absolute;
+    max-height: 50%;
+    opacity:1;
+    left: -10px;
+  }

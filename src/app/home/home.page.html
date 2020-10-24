@@ -1,20 +1,69 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+
+<ion-header>
+  <ion-toolbar id = "toolbar">
+      <ion-button class = "boutonbard" [routerLink] = "['/magasin']">
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+      <ion-button class = "boutonbarg" [routerLink] = "['/home']">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid id = "main-grid">
+    <ion-row class = 'little-row'>
+        <h1>Le Bateau de Thibault</h1>
+    </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  
+  
+    <ion-row class = "little-row">
+      <div id="container">
+        <strong>Vente en direct de notre bateau<br/> Produit selon la saison, Livraison sur Paris</strong>
+        <div>06.63.99.99.78<br/>lebateaudethibault@gmail.com<br/>www.facebook.com/lebateaudethibault</div>
+      </div>
+    </ion-row>
+
+    <ion-row class = "big-row">
+      <ion-grid>
+        <div id="buttonBar">
+          <ion-row>
+            <ion-button id ="button1" [routerLink] = "['/pagetype']" (click) = "this.type.setIndex(1)">
+              {{this.varMaison.getJsonName(0)}}
+              <img src="../assets/icon/poisson.png">
+            </ion-button>
+          </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class ="button2" (click)="this.panier.addSomme(2)" >
+          <img src="../assets/icon/ancre.png">
+        <p class=textbutton2>Bateaux</p>
+        </ion-button> 
+      </ion-col>
+      <ion-col>
+        <ion-button class ="button2" [routerLink] = "['/poisson']">
+          <img src="../assets/icon/restaurant.png">
+          <p class=textbutton2>Restaurants</p>
+          </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class ="button2" [routerLink] = "['/page-test']">
+          <img src="../assets/icon/recette.png">
+            <p class = textbutton2>Recettes</p>
+        </ion-button> 
+      </ion-col>
+      <ion-col>
+        <ion-button class ="button2" [routerLink] = "['/pagetype']" (click) = "this.type.setIndex(0)">
+          <img src="../assets/icon/tourteau.png">
+            <p class = textbutton2>Contact</p>
+          </ion-button>
+      </ion-col>
+    </ion-row>
+    </div>
+    </ion-grid>
+  </ion-row>
+  </ion-grid>
 </ion-content>

@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { PanierService } from '../panier/panier.service';
 import { OnInit } from '@angular/core';
 import products from '../data/products.js';
-import { type } from 'os';
 import { VarMaisonService } from '../varMaison/var-maison.service';
 import { TypeService } from '../type/type.service';
 

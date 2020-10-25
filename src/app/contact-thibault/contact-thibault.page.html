@@ -1,3 +1,21 @@
+<ion-header>
+        <ion-toolbar id = "toolbar">
+            <ion-button class = "boutonbard" [routerLink] = "['/magasin']">
+              <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+            </ion-button>
+            <ion-button class = "boutonbarg" [routerLink] = "['/home']">
+              <ion-icon slot="icon-only" name="home"></ion-icon>
+            </ion-button>
+        </ion-toolbar>
+      </ion-header>
+      
 <ion-content [fullscreen]="true">
-        <h1>Le Bateau de Thibault</h1>
+        <h1>
+                Le Bateau de Thibault
+              </h1>
+              <img src = "../../assets/images/TIG.png"/>
+              <div id="container">
+                <strong>Vente en direct de notre bateau<br/> Produit selon la saison, Livraison sur Paris</strong>
+                <br/>06.63.99.99.78<br/>lebateaudethibault@gmail.com<br/>www.facebook.com/lebateaudethibault
+              </div>   
 </ion-content>

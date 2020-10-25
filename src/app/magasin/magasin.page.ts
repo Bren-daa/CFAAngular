@@ -12,4 +12,10 @@ export class MagasinPage implements OnInit {
   ngOnInit() {
   }
   panier = this.panierService;
+  public message = "Bravo,Votre commande est Validée";
+  public alert(){
+    this.panier.refreshSomme();
+    alert(this.message);
+    
+  }
 }

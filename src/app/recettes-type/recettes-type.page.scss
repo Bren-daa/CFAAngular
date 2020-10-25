@@ -1,23 +1,23 @@
-ion-toolbar {
-  --background: url(/../assets/images/navbarbg.png) 0 0/100% 100% no-repeat;
-}
-.boutonbard{
-  float: right;
-}
-
 ion-content {
     --background: url(/../assets/images/background.png) 0 0/100% 100% no-repeat;
   }
-
   
+  ion-toolbar {
+    --background: url(/../assets/images/navbarbg.png) 0 0/100% 100% no-repeat;
+  }
+  
+  .boutonbard{
+    float: right;
+  }
   
     img {
     position:absolute;
-    left:120px;
+    left:40px;
     top:180px;
-    width:180px;
+    width: max-content;
     border-radius:10px;
-    
+    margin:auto;
+    padding:auto;
     }
   
     h1{
@@ -25,19 +25,18 @@ ion-content {
         padding:3em;
         font-family: 'Snell Roundhand';
         text-align: center;
-        font-size: 1.7em;
-        padding-top:30px;
+        font-size: 2em;
+        padding-top:50px;
         left:20px;
         color: white;
         font-weight:bold;
       }
   
-    div{
+    p{
         position: absolute;
         font-size: 0.8em;
-        top:450px;
+        top:380px;
         text-align: center;
-        left:60px;
-        
+        left:15px;     
         
     }

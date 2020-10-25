@@ -13,14 +13,14 @@
 <ion-content [fullscreen]="true">
   <ion-grid id = "main-grid">
     <ion-row class = 'little-row'>
-        <h1>Le Bateau de Thibault</h1>
+        <h1>Nos Restaurants Partenaires</h1>
     </ion-row>
 
   
   
     <ion-row class = "little-row">
       <div id="container">
-        <strong>Vente en direct de notre bateau<br/> Produit selon la saison, Livraison sur Paris</strong>
+        <strong>Tous les Restaurants partenaires de Thibault</strong>
         <div>06.63.99.99.78<br/>lebateaudethibault@gmail.com<br/>www.facebook.com/lebateaudethibault</div>
       </div>
     </ion-row>
@@ -28,37 +28,32 @@
     <ion-row class = "big-row">
       <ion-grid>
         <div id="buttonBar">
-          <ion-row>
-            <ion-button id ="button1" [routerLink] = "['/produits']">
-              Produits et Promotions
-              <img src="../assets/icon/poisson.png">
-            </ion-button>
-          </ion-row>
+          
     <ion-row>
       <ion-col>
-        <ion-button class ="button2" [routerLink] = "['/bateau']" >
-          <img src="../assets/icon/ancre.png">
-        <p class=textbutton2>Bateaux</p>
+        <ion-button class ="button2" [routerLink] = "['/restaurant-type']" (click) = "this.type.setIndex(0) ">
+          <img src="../assets/icon/desGascons_icon.png">
+        <p class=textbutton2>Bistrot des Gascons</p>
         </ion-button> 
       </ion-col>
       <ion-col>
-        <ion-button class ="button2" [routerLink] = "['/restaurants']">
-          <img src="../assets/icon/restaurant.png">
-          <p class=textbutton2>Restaurants</p>
+        <ion-button class ="button2" [routerLink] = "['/restaurant-type']" (click) = "this.type.setIndex(1)">
+          <img src="../assets/icon/fousDeLIle_icon.png">
+          <p class=textbutton2>Les Fous de l'Ile</p>
           </ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button class ="button2" [routerLink] = "['/recettes']">
-          <img src="../assets/icon/recette.png">
-            <p class = textbutton2>Recettes</p>
+        <ion-button class ="button2" [routerLink] = "['/restaurant-type']" (click) = "this.type.setIndex(2)">
+          <img src="../assets/icon/bistrotLandais_icon.png">
+            <p class = textbutton2>Bistrot Landais</p>
         </ion-button> 
       </ion-col>
       <ion-col>
-        <ion-button class ="button2" [routerLink] = "['/contact-thibault']" >
-          <img src="../assets/icon/tourteau.png">
-            <p class = textbutton2>Contact</p>
+        <ion-button class ="button2" [routerLink] = "['/restaurant-type']" (click) = "this.type.setIndex(3)">
+          <img src="../assets/icon/villa9Trois_icon.png">
+            <p class = textbutton2>Villa 9-Trois</p>
           </ion-button>
       </ion-col>
     </ion-row>

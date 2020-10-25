@@ -11,5 +11,8 @@ export class ProduitsPage implements OnInit {
 
   ngOnInit() {
   }
-
+  public message = "Passez votre commande dans le magasin";
+  public commande(){
+    alert(this.message);
+  }
 }

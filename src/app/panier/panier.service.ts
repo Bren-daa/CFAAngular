@@ -17,6 +17,15 @@ export class PanierService {
       this.somme = this.somme + prix;
   }
 
+  deleteSomme(prix){
+    if (this.somme <= 0){
+      this.somme=0;
+    }else{
+      this.somme=this.somme-prix;
+    }
+   
+  }
+
   incSomme(){
     this.somme = this.somme +1;
     return this.somme;
@@ -24,7 +33,10 @@ export class PanierService {
 
   returnSomme(){
     return this.somme;
+  }
 
-
+  refreshSomme(){
+    this.somme = 0;
+    return this.somme;
   }
 }

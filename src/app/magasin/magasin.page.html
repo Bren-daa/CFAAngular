@@ -1,20 +1,85 @@
 
 <ion-header>
   <ion-toolbar id = "toolbar">
-      <ion-button class = "boutonbard" [routerLink] = "['/magasin']">
-        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
-      </ion-button>
       <ion-button class = "boutonbarg" [routerLink] = "['/home']">
         <ion-icon slot="icon-only" name="home"></ion-icon>
       </ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-button (click) = "this.panier.addSomme(10)">
-    Poisson à 10€
-  </ion-button>
-  <ion-text>
-    Le montant de votre panier s'élève à {{this.panier.returnSomme()}} euros
-  </ion-text>
+<ion-content [fullscreen]="true"> 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+    <ion-button class ="button2" (click) = "this.panier.addSomme(10)">
+      Poissons à 10€ +
+    </ion-button>
+  </ion-col>
+  <ion-col>
+   <ion-button class="delete" (click) = "this.panier.deleteSomme(10)">
+    -  
+   </ion-button>
+  </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class ="button2" (click) = "this.panier.addSomme(20)">
+         Calamar à 20€ +
+        </ion-button>
+      </ion-col>
+      <ion-col>
+       <ion-button class="delete" (click) = "this.panier.deleteSomme(20)">
+        -  
+       </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+   <ion-col>
+    <ion-button class ="button2" (click) = "this.panier.addSomme(15)">
+      Tourteau à 15€ +
+    </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button class="delete" (click) = "this.panier.deleteSomme(15)">
+       -  
+     </ion-button>
+   </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+       <ion-button class ="button2" (click) = "this.panier.addSomme(47)">
+         Homard à 47€ +
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="delete" (click) = "this.panier.deleteSomme(47)">
+         -  
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class ="button2" (click) = "this.panier.addSomme(20)">
+          Huitres 10 à 20€+
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="delete" (click) = "this.panier.deleteSomme(20)">
+          -  
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-button class ="button2" (click)= "alert()">
+      VALIDER COMMANDE
+      </ion-button>
+    </ion-row>
+    <ion-row>
+    <ion-text class = footer > <strong> Merci Beaucoup pour votre commande </strong><br/>
+      Le montant de votre panier s'élève à <br/><p id="prix">{{this.panier.returnSomme()}} euros</p>
+    </ion-text>
+    </ion-row>
+  </ion-grid>
+  
+ 
 </ion-content>

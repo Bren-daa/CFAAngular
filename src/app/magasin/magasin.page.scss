@@ -1,11 +1,60 @@
-ion-content {
-    --background: url(/../assets/images/background.png) 0 0/100% 100% no-repeat;
+ion-toolbar {
+  --background: url(/../assets/images/navbarbg.png) 0 0/100% 100% no-repeat;
+}
+
+
+
+#main-grid{
+    height:100%;
   }
 
-  ion-toolbar {
-    --background: url(/../assets/images/navbarbg.png) 0 0/100% 100% no-repeat;
+ 
+
+  #toolbar{
+    top: 0;
   }
-  
-  .boutonbard{
-    float: right;
+
+  #container{
+    position: relative;
+    text-align: center;
+    left : 30px;
+    top : 35px;
   }
+
+
+
+
+ion-content {
+  --background: url(/../assets/images/background.png) 0 0/100% 100% no-repeat;
+}
+
+
+.textbutton2{
+  position : relative;
+  left:17px;
+}
+.button2{
+  width : 130%;
+  opacity : 0.66;
+  height : 85px;
+  margin:0;
+}
+
+.footer{
+  position: relative;
+  font-size: 18px;
+  float : right;
+}
+#prix{
+  float:right;
+
+}
+.delete {
+  width : 70%;
+  height: 85px;
+  float:right;
+  opacity : 0.66;
+  margin:0;
+}
+
+

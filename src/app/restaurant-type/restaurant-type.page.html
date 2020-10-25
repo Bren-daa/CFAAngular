@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar id = "toolbar">
+      <ion-button class = "boutonbard" [routerLink] = "['/magasin']">
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+      <ion-button class = "boutonbarg" [routerLink] = "['/home']">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>
+    {{this.varMaison.getRestaurantName(this.type.getIndex())}}
+  </h1>
+  <img src = {{this.varMaison.getRestaurantImage(this.type.getIndex())}}/>
+  <p>
+    Qu'il est chaud le soleil <br/>
+    Quand nous sommes en vacances <br/>
+    Y a d'la joie, des hirondelles <br/>
+    C'est le sud de la France <br/>
+    Papa bricole au garage <br/>
+    Maman lit dans la chaison longue <br/>
+    Dans ce joli paysage <br/>
+    Moi, je me balade en tongs <br/> <br/>
+    Que du bonheur! <br/>
+    Que du bonheur!
+  </p>
+</ion-content>

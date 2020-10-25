@@ -16,4 +16,6 @@ export class TypeService {
   getIndex(){
     return this.index;
   }
+
+  
 }

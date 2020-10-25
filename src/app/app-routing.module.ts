@@ -35,6 +35,31 @@ const routes: Routes = [
     path: 'pagetype',
     loadChildren: () => import('./pagetype/pagetype.module').then( m => m.PagetypePageModule)
   },
+  
+  {
+    path: 'bateau',
+    loadChildren: () => import('./bateau/bateau.module').then( m => m.BateauPageModule)
+  },
+  {
+    path: 'restaurants',
+    loadChildren: () => import('./restaurants/restaurants.module').then( m => m.RestaurantsPageModule)
+  },
+  {
+    path: 'restaurant-type',
+    loadChildren: () => import('./restaurant-type/restaurant-type.module').then( m => m.RestaurantTypePageModule)
+  },
+  {
+    path: 'bateau-type',
+    loadChildren: () => import('./bateau-type/bateau-type.module').then( m => m.BateauTypePageModule)
+  },
+  {
+    path: 'recettes-type',
+    loadChildren: () => import('./recettes-type/recettes-type.module').then( m => m.RecettesTypePageModule)
+  },
+  {
+    path: 'recettes',
+    loadChildren: () => import('./recettes/recettes.module').then( m => m.RecettesPageModule)
+  },
 ];
 
 @NgModule({

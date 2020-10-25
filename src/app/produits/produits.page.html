@@ -10,20 +10,36 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-grid id = "main-grid">
-    <ion-row class = "big-row">
-      <ion-grid>
-        <div id="buttonBar">
-          <ion-row>
-            <ion-button id ="button1">
-              Poisson
-              <img src="../assets/icon/poisson.png">
-            </ion-button>
-          </ion-row>
-    <ion-row>
-    </ion-row>
-    </div>
-    </ion-grid>
+  <ion-row class = "big-row">
+    <ion-grid>
+      <div id="buttonBar">
+        <ion-row>
+          <ion-button class ="button2" (click)= "commande()">
+            <img src="../assets/icon/poisson.png">
+            <p class=textbutton2>Poissons</p>
+          </ion-button>
+        </ion-row>
+  <ion-row>
+      <ion-button class ="button2" (click)= "commande()" >
+        <img src="../assets/icon/poulpe.png">
+      <p class=textbutton2>Calamar</p>
+      </ion-button>     
   </ion-row>
+  <ion-row>
+      <ion-button class ="button2" (click)= "commande()" >
+        <img src="../assets/icon/ancre.png">
+          <p class = textbutton2>Coquillages</p>
+      </ion-button> 
+    
+  </ion-row>
+  <ion-row>
+    <ion-button class ="button2" (click)= "commande()">
+      <img src="../assets/icon/homard.png">
+        <p class = textbutton2>Crustacés</p>
+    </ion-button> 
+  
+</ion-row>
+  </div>
   </ion-grid>
+</ion-row>
 </ion-content>
